@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<universite>
+    <nom>Faculté des Sciences de Sfax</nom>
+    <ville>Sfax</ville>
+
+    <departements>
+        <departement id="D01">
+            <nom>Informatique et Communications</nom>
+            <responsable>Corinne Amel ZAYANI</responsable>
+            <enseignants>
+                <enseignant id="E01" grade="Maître de conférences">
+                    <nom>ZAYANI</nom>
+                    <prenom>Corinne Amel</prenom>
+                    <specialite>Architecture SOA</specialite>
+                </enseignant>
+                <enseignant id="E02" grade="Assistante">
+                    <nom>HAKIM</nom>
+                    <prenom>Hela</prenom>
+                    <specialite>Services Web</specialite>
+                </enseignant>
+                <enseignant id="E03" grade="Assistante">
+                    <nom>MOHAMED</nom>
+                    <prenom>Rim</prenom>
+                    <specialite>XML et XPath</specialite>
+                </enseignant>
+            </enseignants>
+            <cours>
+                <cours id="C01" semestre="S5">
+                    <intitule>Architecture SOA et services web</intitule>
+                    <credits>6</credits>
+                    <enseignantRef>E01</enseignantRef>
+                </cours>
+                <cours id="C02" semestre="S5">
+                    <intitule>Programmation Java</intitule>
+                    <credits>4</credits>
+                    <enseignantRef>E02</enseignantRef>
+                </cours>
+                <cours id="C03" semestre="S6">
+                    <intitule>Bases de données avancées</intitule>
+                    <credits>5</credits>
+                    <enseignantRef>E03</enseignantRef>
+                </cours>
+            </cours>
+        </departement>
+    </departements>
+
+    <etudiants>
+        <etudiant id="ET01" niveau="LSI3" actif="true">
+            <nom>Ben Ali</nom>
+            <prenom>Ahmed</prenom>
+            <email>ahmed.benali@gmail.com</email>
+            <moyenne>14.5</moyenne>
+            <inscriptions>
+                <inscription coursId="C01" date="2025-09-15">
+                    <note>15.0</note>
+                </inscription>
+                <inscription coursId="C02" date="2025-09-15">
+                    <note>13.5</note>
+                </inscription>
+            </inscriptions>
+        </etudiant>
+        <etudiant id="ET02" niveau="LSI3" actif="true">
+            <nom>Trabelsi</nom>
+            <prenom>Fatma</prenom>
+            <email>fatma.trabelsi@gmail.com</email>
+            <moyenne>16.2</moyenne>
+            <inscriptions>
+                <inscription coursId="C01" date="2025-09-16">
+                    <note>17.0</note>
+                </inscription>
+                <inscription coursId="C03" date="2025-09-16">
+                    <note>15.5</note>
+                </inscription>
+            </inscriptions>
+        </etudiant>
+        <etudiant id="ET03" niveau="LSI2" actif="false">
+            <nom>Gharbi</nom>
+            <prenom>Mohamed</prenom>
+            <email>mohamed.gharbi@gmail.com</email>
+            <moyenne>11.8</moyenne>
+            <inscriptions>
+                <inscription coursId="C02" date="2025-09-10">
+                    <note>12.0</note>
+                </inscription>
+            </inscriptions>
+        </etudiant>
+        <etudiant id="ET04" niveau="LSI3" actif="true">
+            <nom>Kammoun</nom>
+            <prenom>Salma</prenom>
+            <email>salma.kammoun@gmail.com</email>
+            <moyenne>17.8</moyenne>
+            <inscriptions>
+                <inscription coursId="C01" date="2025-09-17">
+                    <note>18.0</note>
+                </inscription>
+                <inscription coursId="C03" date="2025-09-17">
+                    <note>17.5</note>
+                </inscription>
+            </inscriptions>
+        </etudiant>
+    </etudiants>
+</universite>
